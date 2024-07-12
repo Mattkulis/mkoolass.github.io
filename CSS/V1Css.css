@@ -1,3 +1,4 @@
+/* General styles */
 body {
     margin: 0;
     padding: 0;
@@ -5,8 +6,8 @@ body {
     background-color: #f7f6ce; /* Hex code for the solid color */
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden; /* Prevents body scrolling */
+    min-height: 100vh;
+    overflow: auto; /* Enables body scrolling */
 }
 
 .header {
@@ -22,8 +23,6 @@ body {
     height: 59px; /* Set a fixed height for the header */
 }
 
-
-
 .header a {
     color: white;
     text-decoration: none;
@@ -38,7 +37,7 @@ body {
     width: auto; /* Maintain aspect ratio */
     max-height: 63px; /* Ensure the logo does not exceed the header height */
     margin-left: 10px;
-    margin-right: 10px;/* Margin between logo and first tab */
+    margin-right: 10px; /* Margin between logo and first tab */
 }
 
 .header a:nth-child(1) {
@@ -109,7 +108,7 @@ h1 {
     -webkit-text-stroke-color: black;
     position: relative;
     top: -10px; /* Adjust the top position */
-    max-width: 100%;
+    max-width: calc(100% - 40px); /* Ensure text doesn't exceed the rounded rectangle background */
     font-family: 'CustomFont', Arial, sans-serif;
 
     /* Rounded rectangle background */
@@ -117,23 +116,79 @@ h1 {
     padding: 10px 20px;
     border-radius: 20px;
     display: inline-block;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
     h1 {
-        padding: 5px; /* Reduce padding for smaller screens */
-        font-size: 8vw; /* Increase font size for better readability */
-        top: -150px; /* Adjust top position for smaller screens */
+        font-size: 6vw; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
     }
 }
 
+@media screen and (max-width: 465px) {
+    h1 {
+        font-size: 7vw; /* Adjust font size for smaller screens */
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+        top: 0; /* Adjust top position for smaller screens */
+        max-width: 80%; /* Ensure it doesn't take more than 80% width */
+    }
+}
 
+@media screen and (max-width: 403px) {
+    h1 {
+        font-size: 8vw; /* Adjust font size for even smaller screens */
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+        top: 0; /* Adjust top position for smaller screens */
+        max-width: 80%; /* Ensure it doesn't take more than 80% width */
+    }
+}
 
-.content {
-    max-width: 800px;
+/* Ensure the h1 doesn't cover more than 40% of the background */
+.background-container h1 {
+    max-height: 40%; /* Max height as a percentage of the background container */
+}
+
+/* About Us Page Specific Styles */
+.about-us-body {
+    align-items: center;
+    text-align: center;
     padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-us-body h1, .about-us-body h2 {
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
-    color: black; /* Changed color to black */
-    text-align: justify;
-    font-weight: bold; /* Made text bold */
+}
+
+.about-us-body p, .about-us-body ol {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.about-us-body ol {
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .about-us-body h1 {
+        font-size: 1.5em;
+    }
+
+    .about-us-body h2 {
+        font-size: 1.25em;
+    }
+
+    .about-us-body p, .about-us-body li {
+        font-size: 1em;
+    }
+
+    .about-us-body ol {
+        padding-left: 20px;
+    }
 }
