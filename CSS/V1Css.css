@@ -75,11 +75,12 @@ body {
     height: 100vh; /* Ensures the container covers the entire viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center content */
+    justify-content: flex-start; /* Align items to the top */
     align-items: center; /* Horizontally center content */
     margin: 0 auto; /* Center the container horizontally */
     overflow: hidden; /* Prevents any content from overflowing */
     position: relative; /* Set relative positioning to contain the absolutely positioned overlay image */
+    padding-top: 53px; /* Add specific padding */
 }
 
 .scrollable-content {
@@ -151,9 +152,9 @@ body {
 /* Overlay Image */
 .overlay-image {
     position: absolute;
-    bottom: 0; /* Position the image at the bottom */
+    bottom: 40px; /* Position the image at the bottom */
     width: 100%;
-    max-height: 400px;
+    max-height: 360px;
     display: flex;
     justify-content: center; /* Center the image horizontally */
     overflow: hidden;
@@ -177,6 +178,15 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    background-color: #143983; /* Apply the background color */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    color: orange; /* Apply the text color */
+    font-weight: bold;
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    font-family: 'CustomFont', Arial, sans-serif; /* Apply the custom font */
 }
 
 .about-us-body p, .about-us-body ol {
