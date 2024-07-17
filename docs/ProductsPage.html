@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Display</title>
+    <title>Products Page</title>
+    <link rel="stylesheet" href="../CSS/V1Css.css"> <!-- Updated path to CSS file -->
     <style>
         body {
             margin: 0;
@@ -12,15 +13,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Ensures full viewport height */
-            background-color: #f7f6ce; /* Adjust background color as needed */
+            height: 100vh;
+            background-color: #f7f6ce;
         }
 
         .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 25px; /* Space between images */
+            gap: 25px;
+            margin-top: 20px;
         }
 
         img {
@@ -38,13 +40,12 @@
             position: relative;
             max-width: 100%;
             font-family: 'CustomFont', Arial, sans-serif;
-
-            /* Rounded rectangle background */
             background-color: #143983;
-            padding: 10px 10px;
+            padding: 10px;
             border-radius: 10px;
             display: inline-block;
-            text-align: center; /* Center align the text */
+            text-align: center;
+            margin-top: 20px;
         }
 
         h2 {
@@ -56,20 +57,20 @@
     <h1>Satoshi Sodas/ Pleb Pops:</h1>
     <h2>~Bottles of Fun for Everyone~ Made from Real Cane Sugar!</h2>
     <div class="image-container">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\Passion_Guava.jpeg" alt="PassionGuava">
-        <img src="Assets\W3_Watermelon.jpeg" alt="W3 Watermelon">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\Clear_Bottles1.jpg" alt="Clear Bottles">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\B_Tea_Sea.jpeg" alt="BTSEA">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\Liquid_gold.jpeg" alt="Liquid Gold">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\Solvent_Red_Diesel.jpeg" alt="Solvent Red Diesel">
+        <img src="../Assets/Passion_Guava.jpeg" alt="PassionGuava">
+        <img src="../Assets/W3_Watermelon.jpeg" alt="W3 Watermelon">
+        <img src="../Assets/Clear_Bottles1.jpg" alt="Clear Bottles">
+        <img src="../Assets/B_Tea_Sea.jpeg" alt="BTSEA">
+        <img src="../Assets/Liquid_gold.jpeg" alt="Liquid Gold">
+        <img src="../Assets/Solvent_Red_Diesel.jpeg" alt="Solvent Red Diesel">
     </div>
 
     <h2>Mixed drinks/ Beers</h2>
     <div class="image-container">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\CachacaV1.jpeg" alt="Cachaca V1">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\CachacaV2.jpeg" alt="Cachaca V2">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\ALC_line_aluminum.jpg" alt="Aluminum Cans">
-        <img src="C:\Users\Fibonacci\Desktop\BTC_BEVS\Assets\BC_Buzz.jpeg" alt="Blockchain Buzz">
+        <img src="../Assets/CachacaV1.jpeg" alt="Cachaca V1">
+        <img src="../Assets/CachacaV2.jpeg" alt="Cachaca V2">
+        <img src="../Assets/ALC_line_aluminum.jpg" alt="Aluminum Cans">
+        <img src="../Assets/BC_Buzz.jpeg" alt="Blockchain Buzz">
     </div>
 </body>
 </html>

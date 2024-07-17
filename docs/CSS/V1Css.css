@@ -69,7 +69,7 @@ body {
 }
 
 .background-container {
-    background: url('C:/Users/Fibonacci/Desktop/BTC_BEVS/Assets/Background Image.png') no-repeat center center fixed;
+    background: url('../Assets/Background Image.png') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the container */
     width: 100%;
     height: 100vh; /* Ensures the container covers the entire viewport height */
@@ -99,7 +99,7 @@ body {
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('C:/Users/Fibonacci/Desktop/BTC_BEVS/docs/Kelvinized.ttf') format('truetype');
+    src: url('../docs/Kelvinized.ttf') format('truetype'); /* Updated path to font file */
 }
 
 .title-container {
